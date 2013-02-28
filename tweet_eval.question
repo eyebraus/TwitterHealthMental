@@ -1,0 +1,391 @@
+
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
+    <Overview>
+        <Title>Answer a quick survey about this tweet.</Title>
+        <Text>
+            Please rate these tweets according to whether they shows depression, anxiety, or are unrelated.
+        </Text>
+        <FormattedContent><![CDATA[
+            <ul>
+                <li>Answer both the survey for depression and the survey for anxiety.</li>
+                <li>A tweet can indicate both depression and anxiety - the two survey answers are not mutually exclusive.</li>
+                <li>The ambiguous option means you can't clearly tell if the tweet is &quot;Depressed&quot;/&quot;Cheerful&quot; or &quot;Anxious&quot;/&quot;Relaxed&quot;.</li>
+                <li>The unrelated option means it has nothing to do with these topics.</li>
+                <li>You are not required to follow any links that maybe be included in the tweet text.</li>
+                <li>When in doubt, here are definitions to use when evaluating the tweets:</li>
+                <li>Depression: &quot;a period of unhappiness or low morale which lasts longer than several weeks and may include ideation of self-inflicted injury or suicide&quot;</li>
+                <li>Anxiety: &quot;An unpleasant state of mental uneasiness, nervousness, apprehension and obsession or concern about some uncertain event.&quot;</li>
+            </ul>
+        ]]></FormattedContent>
+    </Overview>
+
+    <Question>
+        <QuestionIdentifier>tweet1d</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>depressed</SelectionIdentifier>
+                        <Text>Depressed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>cheerful</SelectionIdentifier>
+                        <Text>Cheerful</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet1a</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>anxious</SelectionIdentifier>
+                        <Text>Anxious</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>relaxed</SelectionIdentifier>
+                        <Text>Relaxed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet2d</QuestionIdentifier>
+        <DisplayName>Tweet #2</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>depressed</SelectionIdentifier>
+                        <Text>Depressed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>cheerful</SelectionIdentifier>
+                        <Text>Cheerful</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet2a</QuestionIdentifier>
+        <DisplayName>Tweet #2</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>anxious</SelectionIdentifier>
+                        <Text>Anxious</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>relaxed</SelectionIdentifier>
+                        <Text>Relaxed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet3d</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>depressed</SelectionIdentifier>
+                        <Text>Depressed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>cheerful</SelectionIdentifier>
+                        <Text>Cheerful</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet3a</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>anxious</SelectionIdentifier>
+                        <Text>Anxious</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>relaxed</SelectionIdentifier>
+                        <Text>Relaxed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet4d</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>depressed</SelectionIdentifier>
+                        <Text>Depressed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>cheerful</SelectionIdentifier>
+                        <Text>Cheerful</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet4a</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>anxious</SelectionIdentifier>
+                        <Text>Anxious</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>relaxed</SelectionIdentifier>
+                        <Text>Relaxed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet5d</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>depressed</SelectionIdentifier>
+                        <Text>Depressed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>cheerful</SelectionIdentifier>
+                        <Text>Cheerful</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+
+    <Question>
+        <QuestionIdentifier>tweet5a</QuestionIdentifier>
+        <DisplayName>Tweet #1</DisplayName>
+        <IsRequired>true</IsRequired>
+
+        <QuestionContent>
+            <Text></Text>
+        </QuestionContent>
+
+        <AnswerSpecification>
+            <SelectionAnswer>
+                <MinSelectionCount>1</MinSelectionCount>
+                <MaxSelectionCount>1</MaxSelectionCount>
+                <StyleSuggestion>radiobutton</StyleSuggestion>
+
+                <Selections>
+                    <Selection>
+                        <SelectionIdentifier>anxious</SelectionIdentifier>
+                        <Text>Anxious</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>relaxed</SelectionIdentifier>
+                        <Text>Relaxed</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>ambiguous</SelectionIdentifier>
+                        <Text>Ambiguous</Text>
+                    </Selection>
+                    <Selection>
+                        <SelectionIdentifier>unrelated</SelectionIdentifier>
+                        <Text>Unrelated</Text>
+                    </Selection>
+                </Selections>
+            </SelectionAnswer>
+        </AnswerSpecification>
+    </Question>
+</QuestionForm>

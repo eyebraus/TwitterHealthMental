@@ -12,3 +12,4 @@ auth.*
 #################
 
 boto_check.py
+*.pyc

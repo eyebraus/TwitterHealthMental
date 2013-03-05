@@ -1,4 +1,5 @@
-TURK PIPELINE
-=============
+# TwitterHealth Mental #
 
-Submit turk tasks and whatnot and wizardry.
+Track symptoms of depression and anxiety.
+
+* /turk - Amazon Mechanical Turk pipeline

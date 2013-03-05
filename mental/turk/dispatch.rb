@@ -15,7 +15,7 @@ if __FILE__ == $0 then
 
     (0...5).step(5) do |off|
         # parse XML doc
-        File.open("tweet_eval.question") do |f|
+        File.open("questions/tweet_eval.question") do |f|
             doc = Nokogiri::XML(f)
             questions = doc.css("Question")
             # add tweets to evaluation questions

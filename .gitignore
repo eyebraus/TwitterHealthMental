@@ -1,4 +1,14 @@
+# Authentication #
+##################
+
+auth.*
+
+# Logging #
+###########
+
+*.log
+
 # Miscellaneous #
 #################
 
-*.log
+boto_check.py

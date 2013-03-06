@@ -48,8 +48,8 @@ class TweetEvaluationQuestion:
             """ DEPRESSION """
             """ question content (the tweet) """
             depression_qc = QuestionContent()
-            depression_qc.append(SimpleField('Text', "Tweet:"))
-            depression_qc.append(SimpleField('Text', tweet["text"]))
+            # strip away unicode characters
+            depression_qc.append(SimpleField('Text', tweet["text"].encode("utf-8").decode("ascii", "ignore")))
 
             """ selections """
             depression_sel = SelectionAnswer(
@@ -67,8 +67,8 @@ class TweetEvaluationQuestion:
             """ ANXIETY """
             """ question content (the tweet) """
             anxiety_qc = QuestionContent()
-            anxiety_qc.append(SimpleField('Text', "Tweet:"))
-            anxiety_qc.append(SimpleField('Text', tweet["text"]))
+            # strip away unicode characters
+            anxiety_qc.append(SimpleField('Text', tweet["text"].encode("utf-8").decode("ascii", "ignore")))
 
             """ selections """
             anxiety_sel = SelectionAnswer(

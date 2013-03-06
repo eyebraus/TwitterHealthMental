@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 import logging
 from optparse import OptionParser
 import os
-from io import BytesIO
 import sys
 from questions import *
 import xml.dom.minidom as minidom
@@ -75,6 +74,7 @@ if __name__ == "__main__":
     couch = couchdb.Server('http://dev.fount.in:5984')
     couch.resource.credentials = ('admin', 'admin')
     db = openOrCreateDb(couch, 'mturk_trial')
+    db_hits = openOrCreateDb(couch, 'mturk_hits')
     results = db.view("Tweet/all", include_docs = True, limit = 5)
 
     """ aws mechanical turk stuff """
@@ -84,9 +84,6 @@ if __name__ == "__main__":
     for i in range(0, 5, 5):
         tweets, c = [], 0
         for tweet in results:
-            if c < 1:
-                c += 1
-                continue
             if c >= 5:
                 break
             tweets += [tweet.doc]
@@ -94,10 +91,6 @@ if __name__ == "__main__":
             logging.debug("\t\t%s: %s" % (tweet.doc["from_user"], tweet.doc["text"]))
             c += 1
         questions = TweetEvaluationQuestion(tweets)
-        pretty = ''.join([x for x in questions.form.get_as_xml() if ord(x) < 128])
-        pretty = '<?xml version="1.0" encoding="UTF-8"?>\n%s' % pretty
-        # strip all unicode chars
-        logging.debug("%s" % minidom.parseString(pretty).toprettyxml())
         result = connection.create_hit(
             questions = questions.form,
             max_assignments = max_assn,
@@ -106,3 +99,12 @@ if __name__ == "__main__":
             keywords = keywords,
             duration = duration,
             reward = reward)
+        # save HIT and its status to separate db
+        tweet_hit = {
+            "tweets": [tweet["id_str"] for tweet in tweets],
+            "status": "dispatched",
+            # TODO: step your game up
+            #"responses": { tweet["id_str"]: { "depression": }}
+        }
+
+    """ """

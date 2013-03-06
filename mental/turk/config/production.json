@@ -1,0 +1,30 @@
+{
+    "couch": {
+        "host": "http://dev.fount.in",
+        "port": 5984,
+        "credentials": ["admin", "admin"]
+    },
+
+    "turk": {
+        "host": "mechanicalturk.amazonaws.com", // check this later...
+        "questions": {
+            "tweet_eval": {
+                "title": "Fill out some quick surveys about these tweets.",
+                "description": "Please rate these tweets on dimensions of depression and anxiety.",
+                "max_assn": 5,
+                "duration": {
+                    "days": 7
+                },
+                "reward": 0.05,
+                "keywords": "twitter, tweet, tweets, mood, depression, anxiety, survey, health"
+            }
+        }
+    },
+
+    "twitter": {
+        "consumer_key": "dBed6SmjIPIGcdnkMI03nw",
+        "consumer_secret": "ATICxmYw5dC9TBLgqg2s0QFeMagfwJALKDUTRoZN94",
+        "access_token": "981919850-pfAwbpx5gy6Ath4mQMLCldUywMN5PrPLwTABiMMe",
+        "access_secret": "AItuj14hggRp7mTQ7slt1gps7lumRshi9LCF18TnII"
+    }
+}

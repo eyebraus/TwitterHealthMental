@@ -59,7 +59,7 @@ class TweetEvaluationQuestion:
                 type = 'text')
 
             questions += [Question(
-                identifier = "tweet_%03d_dep" % self.tweets.index(tweet),
+                identifier = "tweet_%03d_depression" % self.tweets.index(tweet),
                 content = depression_qc,
                 answer_spec = AnswerSpecification(depression_sel),
                 is_required = True)]
@@ -78,7 +78,7 @@ class TweetEvaluationQuestion:
                 type = 'text')
 
             questions += [Question(
-                identifier = "tweet_%03d_anx" % self.tweets.index(tweet),
+                identifier = "tweet_%03d_anxiety" % self.tweets.index(tweet),
                 content = anxiety_qc,
                 answer_spec = AnswerSpecification(anxiety_sel),
                 is_required = True)]

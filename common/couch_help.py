@@ -10,7 +10,8 @@ def openOrCreateDb(server, name):
         return db
 
 def saveObjectToCouch(db, o):
-    o['_id'] = o['id_str']
+    if '_id' not in o:
+        o['_id'] = o['id_str']
     try:
         db.save(o, batch='ok')
         return True

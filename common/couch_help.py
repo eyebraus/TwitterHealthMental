@@ -1,5 +1,6 @@
 
 import couchdb
+import os
 
 def openOrCreateDb(server, name):
     try:
@@ -17,4 +18,17 @@ def saveObjectToCouch(db, o):
         return True
     except couchdb.http.ResourceConflict:
         logging.exception('Object with _id %s already in db; continuing...' % o['_id'])
+        return False
+
+def loadVitals(db, file_ref):
+    name = os.path.basename(file_ref).split('.')[0]
+    return db.get(name, default = {})
+
+def updateVitals(db, file_ref, vitals):
+    name = os.path.basename(file_ref).split('.')[0]
+    vitals["_id"] = name
+    try:
+        return db.save(vitals)
+    except couchdb.http.ResourceConflict:
+        logging.exception('Object with _id %s already in db; continuing...' % vitals['_id'])
         return False
